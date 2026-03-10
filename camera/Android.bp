@@ -8,6 +8,6 @@ cc_library_static {
     name: "libcameraservice_extension.opsm8150",
     srcs: ["CameraProviderExtension.cpp"],
     include_dirs: [
-        "frameworks/av/services/camera/libcameraservice/common"
+        "frameworks/av/services/camera/libcameraservice/common",
     ],
 }
