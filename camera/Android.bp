@@ -11,3 +11,16 @@ cc_library_static {
         "frameworks/av/services/camera/libcameraservice/common",
     ],
 }
+
+android_app {
+    name: "OnePlusCameraHelper",
+    srcs: ["src/**/*.java"],
+    certificate: "platform",
+    platform_apis: true,
+    privileged: true,
+    use_embedded_native_libs: false,
+    resource_dirs: ["res"],
+    optimize: {
+        proguard_flags_files: ["proguard.flags"],
+    },
+}

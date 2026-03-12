@@ -39,3 +39,16 @@ install_symlink {
     installed_location: "firmware/wlan/qca_cld/WCNSS_qcom_cfg.ini",
     symlink_target: "/vendor/etc/wifi/WCNSS_qcom_cfg.ini",
 }
+
+cc_library {
+    name: "bootctrl.msmnile",
+    defaults: ["bootctrl_hal_defaults"],
+    static_libs: ["libgptutils.oneplus_msmnile"],
+}
+
+cc_library_shared {
+    name: "android.hardware.boot@1.2-impl-qti",
+    defaults: ["android.hardware.boot@1.2-impl-qti_defaults"],
+    stem: "android.hardware.boot@1.0-impl-1.2-qti",
+    static_libs: ["libgptutils.oneplus_msmnile"],
+}
