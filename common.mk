@@ -443,7 +443,8 @@ PRODUCT_PACKAGES += \
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH) \
-    hardware/oneplus
+    hardware/oneplus \
+    hardware/qcom-caf/common/libqti-perfd-client
 
 # Task Profiles
 PRODUCT_COPY_FILES += \
