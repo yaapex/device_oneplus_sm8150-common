@@ -168,11 +168,8 @@ $(call soong_config_set,android_hardware_audio,skip_speaker_layout_channel_mask_
 
 # Boot control
 PRODUCT_PACKAGES += \
-    android.hardware.boot@1.2-impl-qti:64 \
-    android.hardware.boot@1.2-impl-qti.recovery \
-    android.hardware.boot@1.2-service \
-    bootctrl.msmnile \
-    bootctrl.msmnile.recovery
+    android.hardware.boot-service.qti \
+    android.hardware.boot-service.qti.recovery
 
 PRODUCT_PACKAGES_DEBUG += \
     bootctl
