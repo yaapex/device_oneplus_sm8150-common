@@ -5,7 +5,6 @@
 
 soong_namespace {
     imports: [
-        "hardware/qcom-caf/bootctrl",
         "vendor/oneplus/sm8150-common",
     ],
 }
