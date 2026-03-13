@@ -369,6 +369,15 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/nfc/libnfc-nxp.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nxp.conf \
     $(LOCAL_PATH)/configs/nfc/libnfc-nci.conf:$(TARGET_COPY_OUT_PRODUCT)/etc/libnfc-nci.conf
 
+
+# OPlus-fwk
+PRODUCT_PACKAGES += \
+    OplusStubProviders
+
+PRODUCT_PACKAGES += oplus-fwk
+PRODUCT_BOOT_JARS += oplus-fwk
+
+
 # Partitions
 PRODUCT_PACKAGES += \
     vendor_bt_firmware_mountpoint \
