@@ -96,9 +96,9 @@ TARGET_ENABLE_MEDIADRM_64 := true
 TARGET_FS_CONFIG_GEN := $(VENDOR_PATH)/configs/config.fs
 
 # HIDL
-DEVICE_MATRIX_FILE += $(VENDOR_PATH)/configs/compatibility_matrix.xml
-DEVICE_MANIFEST_FILE += $(VENDOR_PATH)/configs/manifest.xml
-ODM_MANIFEST_FILES += $(VENDOR_PATH)/configs/manifest-qva.xml
+DEVICE_MATRIX_FILE += $(VENDOR_PATH)/configs/vintf/compatibility_matrix.xml
+DEVICE_MANIFEST_FILE += $(VENDOR_PATH)/configs/vintf/manifest.xml
+ODM_MANIFEST_FILES += $(VENDOR_PATH)/configs/vintf/manifest-qva.xml
 
 # Init
 TARGET_INIT_VENDOR_LIB := //$(VENDOR_PATH):libinit_oneplus-sm8150
@@ -175,5 +175,5 @@ WPA_SUPPLICANT_VERSION := VER_0_8_X
 
 # FCM
 DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE += \
-    device/oneplus/sm8150-common/vendor_framework_compatibility_matrix.xml \
+    device/oneplus/sm8150-common/configs/vintf/vendor_framework_compatibility_matrix.xml \
     $(VENDOR_PATH)/configs/vintf/oneplus_vendor_framework_compatibility_matrix.xml

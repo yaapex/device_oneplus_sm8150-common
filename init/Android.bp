@@ -24,12 +24,6 @@ cc_library_static {
 }
 
 sh_binary {
-    name: "ftm_power_config.sh",
-    src: "ftm_power_config.sh",
-    vendor: true,
-}
-
-sh_binary {
     name: "init.class_main.sh",
     src: "init.class_main.sh",
     vendor: true,
