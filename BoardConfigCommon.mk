@@ -55,10 +55,10 @@ BOARD_USES_QCOM_HARDWARE := true
 TARGET_BOARD_PLATFORM := msmnile
 
 # Properties
-TARGET_PRODUCT_PROP += $(VENDOR_PATH)/product.prop
-TARGET_SYSTEM_PROP += $(VENDOR_PATH)/system.prop
-TARGET_SYSTEM_EXT_PROP += $(VENDOR_PATH)/system_ext.prop
-TARGET_VENDOR_PROP += $(VENDOR_PATH)/vendor.prop
+TARGET_PRODUCT_PROP += $(VENDOR_PATH)/props/product.prop
+TARGET_SYSTEM_PROP += $(VENDOR_PATH)/props/system.prop
+TARGET_SYSTEM_EXT_PROP += $(VENDOR_PATH)/props/system_ext.prop
+TARGET_VENDOR_PROP += $(VENDOR_PATH)/props/vendor.prop
 
 # A/B
 AB_OTA_UPDATER := true
@@ -184,5 +184,5 @@ WPA_SUPPLICANT_VERSION := VER_0_8_X
 
 # FCM
 DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE += \
-    device/oneplus/sm8150-common/vendor_framework_compatibility_matrix.xml \
+    $(VENDOR_PATH)/configs/vintf/vendor_framework_compatibility_matrix.xml \
     $(VENDOR_PATH)/configs/vintf/oneplus_vendor_framework_compatibility_matrix.xml
