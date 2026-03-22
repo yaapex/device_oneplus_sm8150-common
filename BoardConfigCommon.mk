@@ -55,10 +55,10 @@ BOARD_USES_QCOM_HARDWARE := true
 TARGET_BOARD_PLATFORM := msmnile
 
 # Properties
-TARGET_PRODUCT_PROP += $(VENDOR_PATH)/product.prop
-TARGET_SYSTEM_PROP += $(VENDOR_PATH)/system.prop
-TARGET_SYSTEM_EXT_PROP += $(VENDOR_PATH)/system_ext.prop
-TARGET_VENDOR_PROP += $(VENDOR_PATH)/vendor.prop
+TARGET_PRODUCT_PROP += $(VENDOR_PATH)/props/product.prop
+TARGET_SYSTEM_PROP += $(VENDOR_PATH)/props/system.prop
+TARGET_SYSTEM_EXT_PROP += $(VENDOR_PATH)/props/system_ext.prop
+TARGET_VENDOR_PROP += $(VENDOR_PATH)/props/vendor.prop
 
 # A/B
 AB_OTA_UPDATER := true
@@ -105,9 +105,9 @@ TARGET_ENABLE_MEDIADRM_64 := true
 TARGET_FS_CONFIG_GEN := $(VENDOR_PATH)/config.fs
 
 # HIDL
-DEVICE_MATRIX_FILE += $(VENDOR_PATH)/compatibility_matrix.xml
-DEVICE_MANIFEST_FILE += $(VENDOR_PATH)/manifest.xml
-ODM_MANIFEST_FILES += $(VENDOR_PATH)/manifest-qva.xml
+DEVICE_MATRIX_FILE += $(VENDOR_PATH)/configs/vintf/compatibility_matrix.xml
+DEVICE_MANIFEST_FILE += $(VENDOR_PATH)/configs/vintf/manifest.xml
+ODM_MANIFEST_FILES += $(VENDOR_PATH)/configs/vintf/manifest-qva.xml
 
 # Init
 TARGET_INIT_VENDOR_LIB := //$(VENDOR_PATH):libinit_oneplus-sm8150
@@ -184,5 +184,5 @@ WPA_SUPPLICANT_VERSION := VER_0_8_X
 
 # FCM
 DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE += \
-    device/oneplus/sm8150-common/vendor_framework_compatibility_matrix.xml \
+    $(VENDOR_PATH)/configs/vintf/vendor_framework_compatibility_matrix.xml \
     $(VENDOR_PATH)/configs/vintf/oneplus_vendor_framework_compatibility_matrix.xml
