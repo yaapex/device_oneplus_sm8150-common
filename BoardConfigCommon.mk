@@ -105,9 +105,9 @@ TARGET_ENABLE_MEDIADRM_64 := true
 TARGET_FS_CONFIG_GEN := $(VENDOR_PATH)/config.fs
 
 # HIDL
-DEVICE_MATRIX_FILE += $(VENDOR_PATH)/compatibility_matrix.xml
-DEVICE_MANIFEST_FILE += $(VENDOR_PATH)/manifest.xml
-ODM_MANIFEST_FILES += $(VENDOR_PATH)/manifest-qva.xml
+DEVICE_MATRIX_FILE += $(VENDOR_PATH)/configs/vintfcompatibility_matrix.xml
+DEVICE_MANIFEST_FILE += $(VENDOR_PATH)/configs/vintf/manifest.xml
+ODM_MANIFEST_FILES += $(VENDOR_PATH)/configs/manifest-qva.xml
 
 # Init
 TARGET_INIT_VENDOR_LIB := //$(VENDOR_PATH):libinit_oneplus-sm8150
