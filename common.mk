@@ -356,9 +356,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     KProfiles
 
-# Lindroid
-TARGET_BUILD_LINDROID := true
-
 # Media
 PRODUCT_COPY_FILES += \
     hardware/qcom-caf/sm8150/media/conf_files/msmnile/media_codecs.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs.xml \
