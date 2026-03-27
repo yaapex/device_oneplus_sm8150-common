@@ -124,11 +124,6 @@ vendor/etc/media_codecs_performance_c2.xml|e16b7768c91f1e15ca3ddc146a77645605a1d
 vendor/etc/seccomp_policy/codec2.vendor.base-arm.policy|3c396a276dfb589501105e7158459fa2d644607e
 vendor/etc/seccomp_policy/codec2.vendor.ext-arm.policy|a134d3d5d74294ca8164056b42389b1c7dbb2b65
 -vendor/bin/hw/vendor.qti.media.c2@1.0-service|c170ebc5a0416f609186639125132b87a5650ef8
--vendor/bin/mm-vidc-omx-test;DISABLE_CHECKELF|d229c92c36406c6b18629acd5e615ce755a70a59
--vendor/lib/libMpeg4SwEncoder.so;DISABLE_CHECKELF|d51bfb35879e93eccfa0c1393cfb821c3e76417b
--vendor/lib/libOmxSwVdec.so;DISABLE_CHECKELF|ccb7907ba645dd5ccabf716347727e9bd9390aea
--vendor/lib/libOmxSwVencMpeg4.so;DISABLE_CHECKELF|cbc232ff709978d9ae2782f2f112c90154da2883
--vendor/lib/libOmxVideoDSMode.so;DISABLE_CHECKELF|9ebeebc9ab721dd9e2d6bb7a4c2cea5abfad6065
 -vendor/lib/libfastcrc.so|c375e138d9a25c65014e06f08b47e46e8bc88d43
 -vendor/lib/libqcodec2_base.so|5bec0dec355c90d2a9739105b6d9810291ab9995
 -vendor/lib/libqcodec2_basecodec.so|a517b6a89bf54d58c46758621c6dce9056cb92f7
@@ -137,21 +132,16 @@ vendor/etc/seccomp_policy/codec2.vendor.ext-arm.policy|a134d3d5d74294ca8164056b4
 -vendor/lib/libqcodec2_utils.so|1f1b3ba1600b0f2c0252f590d83fc10cdbe20c07
 -vendor/lib/libqcodec2_v4l2codec.so|ad8b3a35fa377fc903a4382c47f18fe6383d7d2c
 -vendor/lib/libstreamparser.so|49b5a007a6c6ec31a97c00062a421988536f6238
--vendor/lib/libswvdec.so|e8c89470f9ab33e3946addcb777ba290d5e0f17f
 -vendor/lib/libvideoutils.so|8386c94816eb456f8eb78c2203da3aedd35226d1
 -vendor/lib/vendor.qti.hardware.vpp@1.1.so|b202eafce89217597a45dd424a0dbf1353f71170
 -vendor/lib/vendor.qti.hardware.vpp@1.2.so|e5e0e403960db22f6c73479f6aaed73823153156
 -vendor/lib/vendor.qti.hardware.vpp@1.3.so|d4babe496cbfcd3ab6e5ffb8f132b1ceb309be2c
--vendor/lib64/libMpeg4SwEncoder.so;DISABLE_CHECKELF|8bea53f0cb261d8a878a302f66d426773d6633f0
--vendor/lib64/libOmxSwVdec.so;DISABLE_CHECKELF|596ef104d7ac231d6918e9556cb402af80696da7
--vendor/lib64/libOmxSwVencMpeg4.so;DISABLE_CHECKELF|2c0580ed0997da5beb710e7343cc0fc35d127ddb
 -vendor/lib64/libqcodec2_base.so|ad21dcc49bc75fdbb713e5e26eaaa1dbc46998fe
 -vendor/lib64/libqcodec2_basecodec.so|17077854df5fdbe12a34749c59a75a4e16277e20
 -vendor/lib64/libqcodec2_core.so|3a876b96e534f33b94cee5137779c584d9df5134
 -vendor/lib64/libqcodec2_platform.so|02fe8f655030343a67ecb2d6ba67809736aa65f0
 -vendor/lib64/libqcodec2_utils.so|482d975fccbccb1c819eea62952aea641f6a8774
 -vendor/lib64/libqcodec2_v4l2codec.so|d3aa201c20dac6971b2fa331f7ba577e49c75eac
--vendor/lib64/libswvdec.so|f1e32d8218b3786623327f2a2028545c643a38e6
 -vendor/lib64/vendor.qti.hardware.vpp@1.1.so|1c46b47efa2eba717de65d726db75eaa11be4496
 -vendor/lib64/vendor.qti.hardware.vpp@1.2.so|1b4bfb8ef17ea5696cfb35de7215a2a993fe7d9c
 -vendor/lib64/vendor.qti.hardware.vpp@1.3.so|f178ca6fceed592c62facc66d7f4ba555a02011b
@@ -644,40 +634,6 @@ vendor/lib64/unnhal-acc-hvx.so|3f61cfe064965ea1a5fc288b133da1802d36b608
 # NFC
 vendor/etc/libnfc-nxp_RF.conf
 vendor/lib/libpn553_fw.so
-
-# OMX
-vendor/lib/libAlacSwDec.so
-vendor/lib/libApeSwDec.so
-vendor/lib/libdsd2pcm.so
-vendor/lib/libFlacSwDec.so
-vendor/lib/libOmxAacDec.so
-vendor/lib/libOmxAlacDec.so
-vendor/lib/libOmxAlacDecSw.so
-vendor/lib/libOmxAmrDec.so
-vendor/lib/libOmxAmrwbplusDec.so
-vendor/lib/libOmxApeDec.so
-vendor/lib/libOmxApeDecSw.so
-vendor/lib/libOmxDsdDec.so
-vendor/lib/libOmxEvrcDec.so
-vendor/lib/libOmxG711Dec.so
-vendor/lib/libOmxQcelp13Dec.so
-vendor/lib/libOmxVpp.so;DISABLE_CHECKELF
-vendor/lib/libOmxWmaDec.so
-vendor/lib64/libAlacSwDec.so
-vendor/lib64/libApeSwDec.so
-vendor/lib64/libFlacSwDec.so
-vendor/lib64/libOmxAacDec.so
-vendor/lib64/libOmxAlacDec.so
-vendor/lib64/libOmxAlacDecSw.so
-vendor/lib64/libOmxAmrDec.so
-vendor/lib64/libOmxAmrwbplusDec.so
-vendor/lib64/libOmxApeDec.so
-vendor/lib64/libOmxApeDecSw.so
-vendor/lib64/libOmxEvrcDec.so
-vendor/lib64/libOmxG711Dec.so
-vendor/lib64/libOmxQcelp13Dec.so
-vendor/lib64/libOmxVpp.so;DISABLE_CHECKELF
-vendor/lib64/libOmxWmaDec.so
 
 # OPFeature
 vendor/bin/opf-service
