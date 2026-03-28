@@ -106,7 +106,7 @@ TARGET_FS_CONFIG_GEN := $(VENDOR_PATH)/config.fs
 
 # HIDL
 DEVICE_MATRIX_FILE += $(VENDOR_PATH)/configs/vintf/compatibility_matrix.xml
-DEVICE_MANIFEST_FILE += $(VENDOR_PATH)/configs/vintf/manifest.xml
+DEVICE_MANIFEST_FILE += $(VENDOR_PATH)/configs/vintf/manifest.xml hardware/qcom-caf/sm8150/media/conf_files/msmnile/c2_manifest.xml
 ODM_MANIFEST_FILES += $(VENDOR_PATH)/configs/vintf/manifest-qva.xml
 
 # Init
