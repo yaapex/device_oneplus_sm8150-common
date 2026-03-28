@@ -40,7 +40,6 @@ function lib_to_package_fixup_vendor_variants() {
 
     case "$1" in
             libmdmdetect | \
-            libmmosal | \
             com.qualcomm.qti.dpm.api@1.0 | \
             vendor.qti.hardware.data.iwlan@1.0 | \
             vendor.qti.imsrtpservice@3.0 | \

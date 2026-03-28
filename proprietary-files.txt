@@ -59,16 +59,6 @@ vendor/lib/libssrec.so
 vendor/lib/vendor.qti.hardware.audiohalext@1.0.so;DISABLE_CHECKELF
 vendor/lib64/libadsprpc.so
 
-# AV - pinned from old vendor/qcom/common
--system_ext/lib/extractors/libmmparserextractor.so|2053835e8eaaea8c9302ba892598135b6789e15f
--system_ext/lib/libavenhancements.so;DISABLE_CHECKELF|d467c3fd9f5f0c1334b72932c11e029502abe8a4
--system_ext/lib/libmmosal.so|8b1b39e2381cfd84178a278734cfddbcf73ecba4
--system_ext/lib/libmmparser_lite.so|edd354e301073fce1db42cd91093548c912ab18b
--system_ext/lib64/extractors/libmmparserextractor.so|fd22a2bc8f956911b05e938ed7fa7f7cd008baac
--system_ext/lib64/libavenhancements.so;DISABLE_CHECKELF|f39e19fd63e579c2926c7dfa9241a3a81e052db9
--system_ext/lib64/libmmosal.so|43e0618b504500c348d974426eed3b234818a744
--system_ext/lib64/libmmparser_lite.so|6671361d1f02cb83a9dcd70b03deeb432f587a8b
-
 # Adreno - pinned from old vendor/qcom/common
 vendor/gpu/kbc/sequence_manifest.bin|cc050a8058904871b3cfabec74521d42f0a61a1f
 vendor/gpu/kbc/unified_kbcs_32.bin|503228f87adc71131aa8134659b00dffe073e973
@@ -117,32 +107,29 @@ vendor/gpu/kbc/unified_ksqs.bin|8f77dc004796d58acb959e78f4994c5d6b90baef
 -vendor/lib64/libllvm-qcom.so|ac78556c1a76cd9a7033d775e8f1ba4393b630df
 -vendor/lib64/vendor.qti.qspmhal@1.0.so|b24925548b969a7745955bbd48069207aa5889fc
 
-# Media legacy - pinned from old vendor/qcom/common
-vendor/etc/init/vendor.qti.media.c2@1.0-service.rc|11209316ba8aae64b689217bc13b0804f6620678
-vendor/etc/seccomp_policy/codec2.vendor.base-arm.policy|3c396a276dfb589501105e7158459fa2d644607e
-vendor/etc/seccomp_policy/codec2.vendor.ext-arm.policy|a134d3d5d74294ca8164056b42389b1c7dbb2b65
--vendor/bin/hw/vendor.qti.media.c2@1.0-service|c170ebc5a0416f609186639125132b87a5650ef8
--vendor/lib/libfastcrc.so|c375e138d9a25c65014e06f08b47e46e8bc88d43
--vendor/lib/libqcodec2_base.so|5bec0dec355c90d2a9739105b6d9810291ab9995
--vendor/lib/libqcodec2_basecodec.so|a517b6a89bf54d58c46758621c6dce9056cb92f7
--vendor/lib/libqcodec2_core.so|e82b50bc9574436fdc8b881cb94ffa8fae409dd3
--vendor/lib/libqcodec2_platform.so|fccd9c509fbfda6a72299d90d8d680885a1238ec
--vendor/lib/libqcodec2_utils.so|1f1b3ba1600b0f2c0252f590d83fc10cdbe20c07
--vendor/lib/libqcodec2_v4l2codec.so|ad8b3a35fa377fc903a4382c47f18fe6383d7d2c
--vendor/lib/libstreamparser.so|49b5a007a6c6ec31a97c00062a421988536f6238
--vendor/lib/libvideoutils.so|8386c94816eb456f8eb78c2203da3aedd35226d1
--vendor/lib/vendor.qti.hardware.vpp@1.1.so|b202eafce89217597a45dd424a0dbf1353f71170
--vendor/lib/vendor.qti.hardware.vpp@1.2.so|e5e0e403960db22f6c73479f6aaed73823153156
--vendor/lib/vendor.qti.hardware.vpp@1.3.so|d4babe496cbfcd3ab6e5ffb8f132b1ceb309be2c
--vendor/lib64/libqcodec2_base.so|ad21dcc49bc75fdbb713e5e26eaaa1dbc46998fe
--vendor/lib64/libqcodec2_basecodec.so|17077854df5fdbe12a34749c59a75a4e16277e20
--vendor/lib64/libqcodec2_core.so|3a876b96e534f33b94cee5137779c584d9df5134
--vendor/lib64/libqcodec2_platform.so|02fe8f655030343a67ecb2d6ba67809736aa65f0
--vendor/lib64/libqcodec2_utils.so|482d975fccbccb1c819eea62952aea641f6a8774
--vendor/lib64/libqcodec2_v4l2codec.so|d3aa201c20dac6971b2fa331f7ba577e49c75eac
--vendor/lib64/vendor.qti.hardware.vpp@1.1.so|1c46b47efa2eba717de65d726db75eaa11be4496
--vendor/lib64/vendor.qti.hardware.vpp@1.2.so|1b4bfb8ef17ea5696cfb35de7215a2a993fe7d9c
--vendor/lib64/vendor.qti.hardware.vpp@1.3.so|f178ca6fceed592c62facc66d7f4ba555a02011b
+# Media
+vendor/bin/hw/vendor.qti.media.c2@1.0-service
+vendor/bin/vppservice
+vendor/etc/configstore/vpp.configstore.xml
+vendor/etc/init/vendor.qti.media.c2@1.0-service.rc
+vendor/etc/init/vppservice.rc
+vendor/etc/seccomp_policy/codec2.vendor.base.policy
+vendor/etc/seccomp_policy/codec2.vendor.ext.policy
+vendor/lib/libmmosal.so
+vendor/lib/libqcodec2.so
+vendor/lib/libvppclient.so
+vendor/lib/libvpphvx.so
+vendor/lib/libvpplibrary.so
+vendor/lib/vendor.qti.hardware.vpp@1.1.so
+vendor/lib/vendor.qti.hardware.vpp@1.2.so
+vendor/lib/vendor.qti.hardware.vpp@1.3.so
+vendor/lib64/libmmosal.so
+vendor/lib64/libvpphvx.so
+vendor/lib64/libvpplibrary.so
+vendor/lib64/vendor.qti.hardware.vpp@1.1.so
+vendor/lib64/vendor.qti.hardware.vpp@1.2.so
+vendor/lib64/vendor.qti.hardware.vpp@1.3.so
+
 
 # Telephony legacy - pinned from old vendor/qcom/common
 -system_ext/lib64/vendor.qti.hardware.dpmaidlservice-V1-ndk.so|73bf30ab0abe8e7ebb273dc7dc1610511446900f
@@ -233,6 +220,7 @@ vendor/firmware/CAMERA_ICP.elf
 vendor/bin/cdsprpcd
 vendor/etc/init/vendor.qti.cdsprpc-service.rc
 vendor/lib/libcdsp_default_listener.so
+vendor/lib/libfastcrc.so|c375e138d9a25c65014e06f08b47e46e8bc88d43
 vendor/lib/libcdsprpc.so
 vendor/lib/libmdsprpc.so
 vendor/lib/libsdsprpc.so
@@ -611,13 +599,6 @@ vendor/bin/mdm_helper|ae461bfcf72ba66bb242ac27cb00c9bca98d4cb4
 vendor/bin/mdm_helper_proxy|4ca61671f94d204c2599655fa82a268fb10ed9d6
 vendor/bin/oemnvbkdaemon|1fa81b6b60e4b3eb718eadfcf34368f523bf483f
 
-# Media (vendor) - from LA.UM.9.1.r1-11500.02-SMxxx0.QSSI12.0
-vendor/etc/seccomp_policy/codec2.vendor.base.policy|05b0779b5da2ea640984d46a46a796edeaab5fab
-vendor/etc/seccomp_policy/codec2.vendor.ext.policy|6a9a9eb3261048f02805261568097410e1a23b2d
-vendor/etc/system_properties.xml|d4c572e5d0915c907e6308c4f8b12e54ad659bf0
-vendor/lib/libqcodec2.so|ba383c1eca48b29f1e0087970671a55167c96636
--vendor/lib64/libmmosal.so;MODULE_SUFFIX=_vendor|dc6b82fa8d1bd1e7ee0c9dba2ec45b6b032efff0
-
 # Neural networks - from LA.UM.9.1.r1-11500.02-SMxxx0.QSSI12.0
 vendor/bin/hw/android.hardware.neuralnetworks@1.3-service-qti|f751ee39e14b2a8643a0400674bbcef955a3bdf4
 -vendor/etc/vintf/manifest/android.hardware.neuralnetworks@1.3-service-qti-hta.xml|57e182a296097870a4c4ed1579c67da20c2b69de
@@ -927,7 +908,6 @@ vendor/etc/seccomp_policy/wifidisplayhalservice.policy|f113f27e0e301a18baf0ade08
 vendor/etc/wfdconfig.xml|9e13371f7ae509cc0bbb3f2ace93c5ea5d87bf0f
 vendor/lib/libFileMux_proprietary.so|1e125137fcc2c1843cc14e3ec34fc1068fc6bc14
 vendor/lib/libmm-hdcpmgr.so|057fc29807be0f2527c3026d01dff98cfe9018ad
--vendor/lib/libmmosal.so;MODULE_SUFFIX=_vendor|37febc914b2c706a5df0009cc134e9d80690aec0
 vendor/lib/libmmrtpdecoder_proprietary.so|227a26b9ec9ee6f2dc95de47b713b215e8b6c93e
 vendor/lib/libmmrtpencoder_proprietary.so|d0aec32b8e565912ecc475bad40ed626ac1ee04d
 vendor/lib/libwfdcodecv4l2_proprietary.so|e3a67c2aa9f4df8e8274b4d321d5e346420d253d
