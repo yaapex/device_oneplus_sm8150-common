@@ -107,6 +107,9 @@ TARGET_FS_CONFIG_GEN := $(VENDOR_PATH)/config.fs
 # HIDL
 DEVICE_MATRIX_FILE += $(VENDOR_PATH)/configs/vintf/compatibility_matrix.xml
 DEVICE_MANIFEST_FILE += $(VENDOR_PATH)/configs/vintf/manifest.xml
+DEVICE_MANIFEST_FILE += \
+    $(VENDOR_PATH)/configs/vintf/vendor.dolby.hardware.dms@2.0-service.xml \
+    $(VENDOR_PATH)/configs/vintf/vendor.dolby.media.c2.xml
 ODM_MANIFEST_FILES += $(VENDOR_PATH)/configs/vintf/manifest-qva.xml
 
 # Init
@@ -184,5 +187,6 @@ WPA_SUPPLICANT_VERSION := VER_0_8_X
 
 # FCM
 DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE += \
+    $(VENDOR_PATH)/configs/vintf/dolby_framework_matrix.xml \
     $(VENDOR_PATH)/configs/vintf/vendor_framework_compatibility_matrix.xml \
     $(VENDOR_PATH)/configs/vintf/oneplus_vendor_framework_compatibility_matrix.xml

@@ -230,6 +230,10 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/component-overrides.xml:$(TARGET_COPY_OUT_VENDOR)/etc/sysconfig/component-overrides.xml \
     $(LOCAL_PATH)/configs/component-overrides_qti.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/sysconfig/component-overrides.xml
 
+# Dolby
+$(call inherit-product, hardware/dolby/dolby.mk)
+$(call soong_config_set,codec2,target_ships_dolby,true)
+
 # Display
 PRODUCT_PACKAGES += \
     android.hardware.graphics.composer@2.4-service \
@@ -355,9 +359,6 @@ PRODUCT_COPY_FILES += \
 # KProfiles
 PRODUCT_PACKAGES += \
     KProfiles
-
-# Lindroid
-TARGET_BUILD_LINDROID := true
 
 # Media
 PRODUCT_COPY_FILES += \
