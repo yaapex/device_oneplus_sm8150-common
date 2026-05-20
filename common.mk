@@ -1,6 +1,6 @@
 #
 # Copyright (C) 2018-2019 The LineageOS Project
-#
+ #
 # SPDX-License-Identifier: Apache-2.0
 #
 
@@ -360,6 +360,7 @@ PRODUCT_SOONG_NAMESPACES += \
     hardware/google/pixel \
     hardware/lineage/interfaces/power-libperfmgr \
     hardware/oplus \
+    hardware/qcom-caf/bootctrl \
     hardware/qcom-caf/common/libqti-perfd-client
 
 # Telephony
