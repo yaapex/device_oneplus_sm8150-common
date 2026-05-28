@@ -291,6 +291,31 @@ service cnss-daemon /system/vendor/bin/cnss-daemon -n -l
     group system inet net_admin wifi
     capabilities NET_ADMIN
 
+# Reads pi_pp_targets at boot; starts mosey_exclusive_on (Mosey present) or mosey_exclusive_off.
+service mosey_gate /system_ext/bin/mosey_gate.sh
+    class late_start
+    user system
+    group system
+    disabled
+    oneshot
+
+on property:sys.boot_completed=1
+    start mosey_gate
+
+service mosey_exclusive_on /system_ext/bin/mosey_exclusive.sh on
+    class late_start
+    user root
+    group root
+    disabled
+    oneshot
+
+service mosey_exclusive_off /system_ext/bin/mosey_exclusive.sh off
+    class late_start
+    user root
+    group root
+    disabled
+    oneshot
+
 on property:sys.shutdown.requested=*
     write /sys/kernel/shutdown_wlan/shutdown 1
     stop cnss-daemon
